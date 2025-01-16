@@ -15,6 +15,7 @@
   <button type="button" id="butn2" class="butn">13 JAN 25</button>
   <button type="button" id="butn3" class="butn">20 JAN 25</button>
   <button type="button" id="butn4" class="butn">27 JAN 25</button>
+
   </div>
  <div class="target1"></div>
 
@@ -23,15 +24,18 @@
    for (let x=runtot[0]; x<=runtot[1]-1; x++){ 
   ii=x-1;
 if (myResults[ii][2]=="1"){
+  
 bt="butn".concat(x);
+
 document.getElementById(bt).style.backgroundColor="skyblue";
 document.getElementById(bt).style.borderColor="blue";
+
 }
 let z="butn".concat(x);
+
 let y=document.getElementById(z);
 
 y.addEventListener("click",function(e){  
-
 fileCalc(y.innerText);
 ldfle();
 })
@@ -40,8 +44,10 @@ function fileCalc(lbl){
   for (let i=runtot[0]-1; i<=runtot[1]-2; i++){ 
 
   if (lbl==myResults[i][0]){
+
 myRes=myResults[i];}
 sk=myRes[0,1]; 
+
 }
 
 if(myRes[0,2]=="1"){
